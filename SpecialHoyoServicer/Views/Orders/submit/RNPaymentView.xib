@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="RNPaymentView" customModule="SpecialHoyoServicer" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="378" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nrI-dR-gXK">
+                    <rect key="frame" x="0.0" y="0.0" width="378" height="60"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UiH-0a-QNH" userLabel="scanView">
+                            <rect key="frame" x="8" y="8" width="115.5" height="44"/>
+                            <subviews>
+                                <imageView tag="100" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newFee_scan" highlightedImage="newFee_scan_selected" translatesAutoresizingMaskIntoConstraints="NO" id="Thw-4r-7R8">
+                                    <rect key="frame" x="5" y="9.5" width="25" height="25"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="25" id="3kU-xx-Eey"/>
+                                        <constraint firstAttribute="width" secondItem="Thw-4r-7R8" secondAttribute="height" multiplier="1:1" id="VxL-2s-Lk5"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" tag="200" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="扫码收款" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wEl-ga-f7C">
+                                    <rect key="frame" x="35" y="10" width="75.5" height="25"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <color key="textColor" red="0.17254901960784313" green="0.17254901960784313" blue="0.17254901960784313" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Aip-xs-h75" customClass="RNHeightView" customModule="SpecialHoyoServicer" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="115.5" height="44"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <gestureRecognizers/>
+                            <constraints>
+                                <constraint firstItem="wEl-ga-f7C" firstAttribute="centerY" secondItem="Thw-4r-7R8" secondAttribute="centerY" id="7Xp-wA-LjN"/>
+                                <constraint firstAttribute="trailing" secondItem="Aip-xs-h75" secondAttribute="trailing" id="Cfj-aM-lnp"/>
+                                <constraint firstAttribute="trailing" secondItem="wEl-ga-f7C" secondAttribute="trailing" constant="5" id="ClZ-8L-F3U"/>
+                                <constraint firstItem="Thw-4r-7R8" firstAttribute="leading" secondItem="UiH-0a-QNH" secondAttribute="leading" constant="5" id="PmC-gV-plh"/>
+                                <constraint firstItem="Aip-xs-h75" firstAttribute="top" secondItem="UiH-0a-QNH" secondAttribute="top" id="TRe-PI-pte"/>
+                                <constraint firstItem="Aip-xs-h75" firstAttribute="leading" secondItem="UiH-0a-QNH" secondAttribute="leading" id="ap5-n0-2jG"/>
+                                <constraint firstItem="wEl-ga-f7C" firstAttribute="leading" secondItem="Thw-4r-7R8" secondAttribute="trailing" constant="5" id="dvJ-hQ-7ik"/>
+                                <constraint firstItem="Thw-4r-7R8" firstAttribute="centerY" secondItem="UiH-0a-QNH" secondAttribute="centerY" id="fUg-6o-wZh"/>
+                                <constraint firstAttribute="bottom" secondItem="Aip-xs-h75" secondAttribute="bottom" id="jIa-yd-FKf"/>
+                                <constraint firstItem="wEl-ga-f7C" firstAttribute="height" secondItem="Thw-4r-7R8" secondAttribute="height" id="qRS-J2-eOA"/>
+                            </constraints>
+                        </view>
+                        <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZFR-pv-99i" userLabel="cardView">
+                            <rect key="frame" x="131.5" y="8" width="115" height="44"/>
+                            <subviews>
+                                <imageView tag="100" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newFee_card" highlightedImage="newFee_card_selected" translatesAutoresizingMaskIntoConstraints="NO" id="4Sw-yY-C9u">
+                                    <rect key="frame" x="5" y="9.5" width="25" height="25"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="25" id="0ch-ao-PLb"/>
+                                        <constraint firstAttribute="width" secondItem="4Sw-yY-C9u" secondAttribute="height" multiplier="1:1" id="3BB-pL-RS6"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" tag="200" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="刷卡收款" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UzC-Xi-I6I">
+                                    <rect key="frame" x="35" y="10" width="75" height="25"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <color key="textColor" red="0.17254901959999999" green="0.17254901959999999" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="doN-ml-1oF" customClass="RNHeightView" customModule="SpecialHoyoServicer" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="115" height="44"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="UzC-Xi-I6I" firstAttribute="centerY" secondItem="4Sw-yY-C9u" secondAttribute="centerY" id="4Pq-4m-oku"/>
+                                <constraint firstAttribute="trailing" secondItem="UzC-Xi-I6I" secondAttribute="trailing" constant="5" id="4na-qx-h8r"/>
+                                <constraint firstItem="4Sw-yY-C9u" firstAttribute="centerY" secondItem="ZFR-pv-99i" secondAttribute="centerY" id="6s7-vR-8wT"/>
+                                <constraint firstItem="4Sw-yY-C9u" firstAttribute="leading" secondItem="ZFR-pv-99i" secondAttribute="leading" constant="5" id="FuX-F3-4ap"/>
+                                <constraint firstAttribute="trailing" secondItem="doN-ml-1oF" secondAttribute="trailing" id="KyY-VV-GFV"/>
+                                <constraint firstAttribute="bottom" secondItem="doN-ml-1oF" secondAttribute="bottom" id="Mlg-5t-ev8"/>
+                                <constraint firstItem="doN-ml-1oF" firstAttribute="top" secondItem="ZFR-pv-99i" secondAttribute="top" id="YAj-j1-rVx"/>
+                                <constraint firstItem="doN-ml-1oF" firstAttribute="leading" secondItem="ZFR-pv-99i" secondAttribute="leading" id="b4R-9R-A7I"/>
+                                <constraint firstItem="UzC-Xi-I6I" firstAttribute="leading" secondItem="4Sw-yY-C9u" secondAttribute="trailing" constant="5" id="f6f-aS-5Lc"/>
+                                <constraint firstItem="UzC-Xi-I6I" firstAttribute="height" secondItem="4Sw-yY-C9u" secondAttribute="height" id="j0V-ia-3si"/>
+                            </constraints>
+                        </view>
+                        <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zqd-tY-fp7" userLabel="cashView">
+                            <rect key="frame" x="254.5" y="8" width="115.5" height="44"/>
+                            <subviews>
+                                <imageView tag="100" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newFee_cash" highlightedImage="newFee_cash_selected" translatesAutoresizingMaskIntoConstraints="NO" id="gx1-bw-yzI">
+                                    <rect key="frame" x="5" y="9.5" width="25" height="25"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="25" id="CQz-gJ-zI3"/>
+                                        <constraint firstAttribute="width" secondItem="gx1-bw-yzI" secondAttribute="height" multiplier="1:1" id="PM6-kW-qWh"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" tag="200" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="售后代付" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z4d-AF-wu8">
+                                    <rect key="frame" x="35" y="10" width="75.5" height="25"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <color key="textColor" red="0.17254901959999999" green="0.17254901959999999" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IhA-eN-msP" customClass="RNHeightView" customModule="SpecialHoyoServicer" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="115.5" height="44"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="IhA-eN-msP" firstAttribute="leading" secondItem="zqd-tY-fp7" secondAttribute="leading" id="1ap-m0-Faa"/>
+                                <constraint firstAttribute="trailing" secondItem="Z4d-AF-wu8" secondAttribute="trailing" constant="5" id="7Cz-Bo-BcN"/>
+                                <constraint firstItem="Z4d-AF-wu8" firstAttribute="centerY" secondItem="gx1-bw-yzI" secondAttribute="centerY" id="EeF-yF-bRQ"/>
+                                <constraint firstItem="Z4d-AF-wu8" firstAttribute="leading" secondItem="gx1-bw-yzI" secondAttribute="trailing" constant="5" id="Gm6-4M-Uvg"/>
+                                <constraint firstAttribute="bottom" secondItem="IhA-eN-msP" secondAttribute="bottom" id="VFM-dy-ep4"/>
+                                <constraint firstItem="gx1-bw-yzI" firstAttribute="leading" secondItem="zqd-tY-fp7" secondAttribute="leading" constant="5" id="cIW-Zt-3MY"/>
+                                <constraint firstItem="gx1-bw-yzI" firstAttribute="centerY" secondItem="zqd-tY-fp7" secondAttribute="centerY" id="e3T-7m-12z"/>
+                                <constraint firstAttribute="trailing" secondItem="IhA-eN-msP" secondAttribute="trailing" id="jiH-YT-Kss"/>
+                                <constraint firstItem="Z4d-AF-wu8" firstAttribute="height" secondItem="gx1-bw-yzI" secondAttribute="height" id="lqs-zh-zx5"/>
+                                <constraint firstItem="IhA-eN-msP" firstAttribute="top" secondItem="zqd-tY-fp7" secondAttribute="top" id="xS0-Qh-gph"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.89803921568627454" green="0.89803921568627454" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="ZFR-pv-99i" firstAttribute="leading" secondItem="UiH-0a-QNH" secondAttribute="trailing" constant="8" id="50F-Tn-xfa"/>
+                        <constraint firstItem="ZFR-pv-99i" firstAttribute="width" secondItem="UiH-0a-QNH" secondAttribute="width" id="C4V-f3-pgP"/>
+                        <constraint firstItem="ZFR-pv-99i" firstAttribute="centerY" secondItem="UiH-0a-QNH" secondAttribute="centerY" id="Es4-q0-zng"/>
+                        <constraint firstItem="zqd-tY-fp7" firstAttribute="centerY" secondItem="ZFR-pv-99i" secondAttribute="centerY" id="T6y-xo-99u"/>
+                        <constraint firstItem="UiH-0a-QNH" firstAttribute="top" secondItem="nrI-dR-gXK" secondAttribute="top" constant="8" id="Wie-bF-GY1"/>
+                        <constraint firstItem="zqd-tY-fp7" firstAttribute="leading" secondItem="ZFR-pv-99i" secondAttribute="trailing" constant="8" id="XPs-E9-edc"/>
+                        <constraint firstItem="zqd-tY-fp7" firstAttribute="width" secondItem="ZFR-pv-99i" secondAttribute="width" id="XUu-ob-edl"/>
+                        <constraint firstItem="ZFR-pv-99i" firstAttribute="height" secondItem="UiH-0a-QNH" secondAttribute="height" id="iPp-Zi-wcO"/>
+                        <constraint firstItem="zqd-tY-fp7" firstAttribute="height" secondItem="ZFR-pv-99i" secondAttribute="height" id="jPB-h2-Vx2"/>
+                        <constraint firstAttribute="bottom" secondItem="UiH-0a-QNH" secondAttribute="bottom" constant="8" id="mlG-fc-1ZO"/>
+                        <constraint firstItem="UiH-0a-QNH" firstAttribute="leading" secondItem="nrI-dR-gXK" secondAttribute="leading" constant="8" id="r6a-uE-gkW"/>
+                        <constraint firstAttribute="trailing" secondItem="zqd-tY-fp7" secondAttribute="trailing" constant="8" id="tsN-XV-sUt"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="nrI-dR-gXK" secondAttribute="trailing" id="0gm-C3-DtY"/>
+                <constraint firstAttribute="bottom" secondItem="nrI-dR-gXK" secondAttribute="bottom" id="EGe-qh-JEK"/>
+                <constraint firstItem="nrI-dR-gXK" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="RgT-Md-pkf"/>
+                <constraint firstItem="nrI-dR-gXK" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Uj5-r0-VIU"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="cardImageView" destination="4Sw-yY-C9u" id="jop-cR-vTI"/>
+                <outlet property="cardLabel" destination="UzC-Xi-I6I" id="z68-FR-9Ov"/>
+                <outlet property="cardView" destination="ZFR-pv-99i" id="6xS-0i-PCA"/>
+                <outlet property="cashImageView" destination="gx1-bw-yzI" id="GaL-gi-QFX"/>
+                <outlet property="cashLabel" destination="Z4d-AF-wu8" id="ONe-Ef-dWf"/>
+                <outlet property="cashView" destination="zqd-tY-fp7" id="OsC-t5-zv6"/>
+                <outlet property="containerView" destination="nrI-dR-gXK" id="ac2-pm-iyH"/>
+                <outlet property="scanImageView" destination="Thw-4r-7R8" id="UpK-IF-ETv"/>
+                <outlet property="scanLabel" destination="wEl-ga-f7C" id="BKb-gy-KnF"/>
+                <outlet property="scanView" destination="UiH-0a-QNH" id="4dk-OY-gOI"/>
+                <outlet property="tapCardView" destination="doN-ml-1oF" id="Ecv-gt-rWh"/>
+                <outlet property="tapCashView" destination="IhA-eN-msP" id="2gP-Af-TCH"/>
+                <outlet property="tapScanView" destination="Aip-xs-h75" id="6c1-nL-j9x"/>
+            </connections>
+            <point key="canvasLocation" x="36" y="-206"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="newFee_card" width="60" height="60"/>
+        <image name="newFee_card_selected" width="60" height="60"/>
+        <image name="newFee_cash" width="60" height="60"/>
+        <image name="newFee_cash_selected" width="60" height="60"/>
+        <image name="newFee_scan" width="60" height="60"/>
+        <image name="newFee_scan_selected" width="60" height="60"/>
+    </resources>
+</document>

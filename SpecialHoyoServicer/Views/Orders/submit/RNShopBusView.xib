@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view opaque="NO" contentMode="scaleToFill" id="iN0-l3-epB" customClass="RNShopBusView" customModule="SpecialHoyoServicer" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="372" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FPd-q9-hAm">
+                    <rect key="frame" x="0.0" y="10" width="372" height="50"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j1x-ps-Ebk" userLabel="shopBus">
+                            <rect key="frame" x="8" y="-10" width="55" height="55"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="j1x-ps-Ebk" secondAttribute="height" multiplier="1:1" id="9lf-gt-iAH"/>
+                            </constraints>
+                            <state key="normal" image="order_shopBus"/>
+                            <connections>
+                                <action selector="shopAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="iF7-VH-WkE"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VSQ-fc-Cil">
+                            <rect key="frame" x="83" y="30" width="0.0" height="15"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="15" id="Vhd-dF-K3v"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LEe-xL-zh4">
+                            <rect key="frame" x="272" y="0.0" width="100" height="50"/>
+                            <color key="backgroundColor" red="0.0" green="0.67450980390000004" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="100" id="2Vv-Uu-St6"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <state key="normal" title="提交">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="submitAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="O6q-Ct-o2Z"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n56-TK-qg1">
+                            <rect key="frame" x="83" y="9" width="0.0" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="g67-RP-XYF"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                            <color key="textColor" red="0.0" green="0.67450980390000004" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="j1x-ps-Ebk" firstAttribute="leading" secondItem="FPd-q9-hAm" secondAttribute="leading" constant="8" id="1pv-M9-J5c"/>
+                        <constraint firstItem="j1x-ps-Ebk" firstAttribute="top" secondItem="FPd-q9-hAm" secondAttribute="top" constant="-10" id="1ti-i5-GQi"/>
+                        <constraint firstItem="LEe-xL-zh4" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="VSQ-fc-Cil" secondAttribute="trailing" constant="20" id="1zM-g7-9qr"/>
+                        <constraint firstItem="LEe-xL-zh4" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="n56-TK-qg1" secondAttribute="trailing" constant="20" id="6dm-Xg-HNF"/>
+                        <constraint firstItem="VSQ-fc-Cil" firstAttribute="bottom" secondItem="j1x-ps-Ebk" secondAttribute="bottom" id="8cL-GB-NX8"/>
+                        <constraint firstItem="VSQ-fc-Cil" firstAttribute="leading" secondItem="j1x-ps-Ebk" secondAttribute="trailing" constant="20" id="Ain-hF-5pL"/>
+                        <constraint firstItem="n56-TK-qg1" firstAttribute="leading" secondItem="VSQ-fc-Cil" secondAttribute="leading" id="KnG-hV-4gJ"/>
+                        <constraint firstItem="VSQ-fc-Cil" firstAttribute="top" secondItem="n56-TK-qg1" secondAttribute="bottom" id="L69-of-xuS"/>
+                        <constraint firstAttribute="trailing" secondItem="LEe-xL-zh4" secondAttribute="trailing" id="YjG-Ke-BbZ"/>
+                        <constraint firstItem="LEe-xL-zh4" firstAttribute="top" secondItem="FPd-q9-hAm" secondAttribute="top" id="gLH-0X-Gom"/>
+                        <constraint firstAttribute="height" constant="50" id="kaE-1t-tKt"/>
+                        <constraint firstAttribute="bottom" secondItem="LEe-xL-zh4" secondAttribute="bottom" id="vhD-a5-Sfb"/>
+                        <constraint firstAttribute="bottom" secondItem="j1x-ps-Ebk" secondAttribute="bottom" constant="5" id="y1W-ho-vLX"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="FPd-q9-hAm" secondAttribute="bottom" id="dYE-18-DLW"/>
+                <constraint firstAttribute="trailing" secondItem="FPd-q9-hAm" secondAttribute="trailing" id="fYm-bm-Q6k"/>
+                <constraint firstItem="FPd-q9-hAm" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="wsK-Ba-zXT"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="amountLabel" destination="VSQ-fc-Cil" id="DHD-pk-Axw"/>
+                <outlet property="priceLabel" destination="n56-TK-qg1" id="Sba-DQ-UdM"/>
+                <outlet property="shopBusButton" destination="j1x-ps-Ebk" id="GJo-RT-Tuv"/>
+            </connections>
+            <point key="canvasLocation" x="104" y="-252"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="order_shopBus" width="60" height="60"/>
+    </resources>
+</document>

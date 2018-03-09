@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="RNPaymentHeadView" customModule="SpecialHoyoServicer" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="384" height="150"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hmY-Jf-YdV" customClass="RNMultiFunctionLabel" customModule="SpecialHoyoServicer" customModuleProvider="target">
+                    <rect key="frame" x="8" y="8" width="0.0" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="btI-dN-Etu"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.2156862745" green="0.2156862745" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VZS-8l-oIR">
+                    <rect key="frame" x="147.5" y="71" width="90" height="48"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="费用明细" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0oj-ix-cYu">
+                    <rect key="frame" x="167.5" y="51.5" width="49.5" height="14.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="元" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ea2-NE-dgq">
+                    <rect key="frame" x="237.5" y="90" width="17.5" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="0oj-ix-cYu" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="3dQ-re-EB5"/>
+                <constraint firstItem="hmY-Jf-YdV" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="8" id="Dof-3a-er2"/>
+                <constraint firstItem="VZS-8l-oIR" firstAttribute="top" secondItem="0oj-ix-cYu" secondAttribute="bottom" constant="5" id="eMs-gm-iKU"/>
+                <constraint firstItem="Ea2-NE-dgq" firstAttribute="bottom" secondItem="VZS-8l-oIR" secondAttribute="bottom" constant="-8" id="hna-cc-8gK"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="hmY-Jf-YdV" secondAttribute="trailing" constant="8" id="lML-ap-eEC"/>
+                <constraint firstItem="VZS-8l-oIR" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="20" id="pQh-fL-Xjx"/>
+                <constraint firstItem="Ea2-NE-dgq" firstAttribute="leading" secondItem="VZS-8l-oIR" secondAttribute="trailing" id="uzd-IQ-OhE"/>
+                <constraint firstItem="VZS-8l-oIR" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="whw-AV-fFg"/>
+                <constraint firstItem="hmY-Jf-YdV" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="8" id="xIM-HZ-jDZ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="desLabel" destination="0oj-ix-cYu" id="4ue-AP-H3V"/>
+                <outlet property="feeLabel" destination="VZS-8l-oIR" id="HK9-OH-lLL"/>
+                <outlet property="orderIdLabel" destination="hmY-Jf-YdV" id="hK9-FQ-fH8"/>
+                <outlet property="unitLabel" destination="Ea2-NE-dgq" id="ang-rv-9D5"/>
+            </connections>
+            <point key="canvasLocation" x="39" y="-204"/>
+        </view>
+    </objects>
+</document>

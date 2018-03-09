@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="RNInfoListCell" customModule="SpecialHoyoServicer" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="姓名" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eds-zS-L8F">
+                        <rect key="frame" x="16" y="11" width="60" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="dOx-fv-oua"/>
+                            <constraint firstAttribute="width" constant="60" id="sHk-4R-CWa"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="浩优服务家" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k9X-68-keN">
+                        <rect key="frame" x="235.5" y="11" width="71.5" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="k9X-68-keN" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="88I-pC-lm8"/>
+                    <constraint firstItem="Eds-zS-L8F" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="a1w-Cx-8qb"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="k9X-68-keN" secondAttribute="trailing" constant="5" id="dMr-Rp-jkT"/>
+                    <constraint firstItem="k9X-68-keN" firstAttribute="height" secondItem="Eds-zS-L8F" secondAttribute="height" id="egN-Wi-4nL"/>
+                    <constraint firstItem="k9X-68-keN" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Eds-zS-L8F" secondAttribute="trailing" constant="10" id="hPc-DR-gpT"/>
+                    <constraint firstItem="Eds-zS-L8F" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="8" id="pJj-4d-ySF"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="contentLabel" destination="k9X-68-keN" id="rMO-Lf-Pkd"/>
+                <outlet property="titleLabel" destination="Eds-zS-L8F" id="KHy-nD-HJP"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

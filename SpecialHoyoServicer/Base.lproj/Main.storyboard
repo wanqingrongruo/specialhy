@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="hEN-FY-xEB"/>
+                    <connections>
+                        <segue destination="Dp5-Ib-19g" kind="show" identifier="personal" id="MYt-kP-sRF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="33" y="-42"/>
+        </scene>
+        <!--Get Order View Controller-->
+        <scene sceneID="hT8-Ry-icg">
+            <objects>
+                <viewController storyboardIdentifier="getOrder" id="QNB-qa-Udf" customClass="RNGetOrderViewController" customModule="SpecialHoyoServicer" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2wy-dw-2LN"/>
+                        <viewControllerLayoutGuide type="bottom" id="mVm-jh-wf6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aF5-1w-Ot9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kGg-gg-a0z">
+                                <rect key="frame" x="164" y="265" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="showFromRight:" destination="QNB-qa-Udf" eventType="touchUpInside" id="EiC-yy-dAh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fYM-VX-hlz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="830" y="-42"/>
+        </scene>
+        <!--Wait Dealing View Controller-->
+        <scene sceneID="6KU-Lu-HK2">
+            <objects>
+                <viewController storyboardIdentifier="waitDeal" id="lee-zZ-JdH" customClass="RNWaitDealingViewController" customModule="SpecialHoyoServicer" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XTT-IR-sOO"/>
+                        <viewControllerLayoutGuide type="bottom" id="BDD-HY-Jzj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ueD-tT-ppl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uyi-3I-ExN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1634" y="-43"/>
+        </scene>
+        <!--Subscribe View Controller-->
+        <scene sceneID="Rcb-GK-0W0">
+            <objects>
+                <viewController storyboardIdentifier="subscribe" id="IwN-ZW-dv2" customClass="RNSubscribeViewController" customModule="SpecialHoyoServicer" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="D0P-dS-tgU"/>
+                        <viewControllerLayoutGuide type="bottom" id="Zss-Zk-2pg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fHT-We-qpj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zwn-YU-aBc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2454" y="-43"/>
+        </scene>
+        <!--Completed View Controller-->
+        <scene sceneID="pxM-AM-Pcj">
+            <objects>
+                <viewController storyboardIdentifier="completed" id="2fJ-lD-Hhv" customClass="RNCompletedViewController" customModule="SpecialHoyoServicer" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kD5-B0-yrA"/>
+                        <viewControllerLayoutGuide type="bottom" id="7o2-4Z-2qM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="K7N-UF-rCb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Guy-wc-V58" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3230" y="-44"/>
+        </scene>
+        <!--Personal View Controller-->
+        <scene sceneID="ajH-e7-FSO">
+            <objects>
+                <viewController storyboardIdentifier="personal" id="Dp5-Ib-19g" customClass="RNPersonalViewController" customModule="SpecialHoyoServicer" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gQw-eA-ToE"/>
+                        <viewControllerLayoutGuide type="bottom" id="l6z-Y4-lD4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1Z6-4u-kL6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0jV-4A-OkK">
+                                <rect key="frame" x="164" y="231" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="showFromRight:" destination="Dp5-Ib-19g" eventType="touchUpInside" id="sGe-Pg-MtC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tnx-Ab-JBi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="33" y="730"/>
+        </scene>
+        <!--About View Controller-->
+        <scene sceneID="6mn-Gd-dXk">
+            <objects>
+                <viewController storyboardIdentifier="about" id="XoU-Fc-FzH" customClass="RNAboutViewController" customModule="SpecialHoyoServicer" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Tec-YX-8V5"/>
+                        <viewControllerLayoutGuide type="bottom" id="Jxd-lw-CqU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="a3A-U2-Ech">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HoT-bq-IuQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="831" y="732"/>
+        </scene>
+    </scenes>
+</document>

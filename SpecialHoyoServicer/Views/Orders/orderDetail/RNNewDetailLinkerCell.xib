@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="RNNewDetailLinkerCell" customModule="SpecialHoyoServicer" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QSt-AL-ZZH" userLabel="twoView">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="新联系人: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8bN-BR-zfL">
+                                <rect key="frame" x="8" y="4.5" width="80" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="CYs-XS-vaw"/>
+                                    <constraint firstAttribute="height" constant="34" id="jMs-rr-jDC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BKH-Uk-iYz">
+                                <rect key="frame" x="268" y="-0.5" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Oep-Ll-uYs"/>
+                                    <constraint firstAttribute="width" secondItem="BKH-Uk-iYz" secondAttribute="height" multiplier="1:1" id="a1l-0b-qQB"/>
+                                </constraints>
+                                <state key="normal" image="order_telephone"/>
+                                <connections>
+                                    <action selector="dailAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Ipl-6w-T2P"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="张三" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aJ5-TD-oEc" customClass="RNMultiFunctionLabel" customModule="SpecialHoyoServicer" customModuleProvider="target">
+                                <rect key="frame" x="93" y="8.5" width="29" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="26" id="mGW-b2-T3T"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="aJ5-TD-oEc" firstAttribute="centerY" secondItem="BKH-Uk-iYz" secondAttribute="centerY" id="6JB-D9-9Kt"/>
+                            <constraint firstAttribute="bottom" secondItem="aJ5-TD-oEc" secondAttribute="bottom" constant="8.5" id="8ab-Pe-n2Z"/>
+                            <constraint firstItem="BKH-Uk-iYz" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="aJ5-TD-oEc" secondAttribute="trailing" constant="8" id="Fde-le-5Fy"/>
+                            <constraint firstItem="aJ5-TD-oEc" firstAttribute="centerY" secondItem="8bN-BR-zfL" secondAttribute="centerY" id="Lyw-bf-qnm"/>
+                            <constraint firstItem="aJ5-TD-oEc" firstAttribute="top" secondItem="QSt-AL-ZZH" secondAttribute="top" constant="8.5" id="PYq-Ih-Rvy"/>
+                            <constraint firstItem="8bN-BR-zfL" firstAttribute="leading" secondItem="QSt-AL-ZZH" secondAttribute="leading" constant="8" id="UeO-VV-biz"/>
+                            <constraint firstItem="BKH-Uk-iYz" firstAttribute="centerY" secondItem="QSt-AL-ZZH" secondAttribute="centerY" id="iPy-gF-DiL"/>
+                            <constraint firstItem="aJ5-TD-oEc" firstAttribute="leading" secondItem="8bN-BR-zfL" secondAttribute="trailing" constant="5" id="jKr-eL-8ko"/>
+                            <constraint firstItem="aJ5-TD-oEc" firstAttribute="centerY" secondItem="QSt-AL-ZZH" secondAttribute="centerY" id="pUy-t6-BeG"/>
+                            <constraint firstAttribute="trailing" secondItem="BKH-Uk-iYz" secondAttribute="trailing" constant="8" id="tbQ-wI-Y0g"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="QSt-AL-ZZH" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="POI-9R-Nhv"/>
+                    <constraint firstAttribute="bottom" secondItem="QSt-AL-ZZH" secondAttribute="bottom" id="VOl-Sn-Uwl"/>
+                    <constraint firstAttribute="trailing" secondItem="QSt-AL-ZZH" secondAttribute="trailing" id="bVl-og-hTf"/>
+                    <constraint firstItem="QSt-AL-ZZH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="vAt-dG-x5Z"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="contentLabel" destination="aJ5-TD-oEc" id="7bS-Qo-ekC"/>
+                <outlet property="dailButton" destination="BKH-Uk-iYz" id="ATk-v3-84G"/>
+                <outlet property="titleLabel" destination="8bN-BR-zfL" id="Lzx-Vc-VYU"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="order_telephone" width="22" height="22"/>
+    </resources>
+</document>

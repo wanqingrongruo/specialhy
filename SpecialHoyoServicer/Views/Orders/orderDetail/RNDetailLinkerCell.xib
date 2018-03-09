@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="RNDetailLinkerCell" customModule="SpecialHoyoServicer" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yMj-bG-my3" userLabel="twoView">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="联系人: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jzV-2F-XKM">
+                                <rect key="frame" x="8" y="5" width="80" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="FdT-MW-8fK"/>
+                                    <constraint firstAttribute="height" constant="34" id="aVT-o2-Lv8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Ae-2s-YcN">
+                                <rect key="frame" x="268" y="0.0" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="3Ae-2s-YcN" secondAttribute="height" multiplier="1:1" id="X9k-28-mYg"/>
+                                    <constraint firstAttribute="height" constant="44" id="cIn-rw-sh0"/>
+                                </constraints>
+                                <state key="normal" image="order_telephone"/>
+                                <connections>
+                                    <action selector="dailAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="kbF-fs-Jvy"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="张三" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZL3-vx-J6o" customClass="RNMultiFunctionLabel" customModule="SpecialHoyoServicer" customModuleProvider="target">
+                                <rect key="frame" x="93" y="9" width="29" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="26" id="NTp-9G-Rnk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ZL3-vx-J6o" firstAttribute="centerY" secondItem="yMj-bG-my3" secondAttribute="centerY" id="2FN-2c-fpm"/>
+                            <constraint firstItem="jzV-2F-XKM" firstAttribute="leading" secondItem="yMj-bG-my3" secondAttribute="leading" constant="8" id="3fx-zh-b7P"/>
+                            <constraint firstAttribute="trailing" secondItem="3Ae-2s-YcN" secondAttribute="trailing" constant="8" id="EG9-mK-kk3"/>
+                            <constraint firstItem="ZL3-vx-J6o" firstAttribute="centerY" secondItem="jzV-2F-XKM" secondAttribute="centerY" id="Ecl-s5-hLq"/>
+                            <constraint firstItem="ZL3-vx-J6o" firstAttribute="centerY" secondItem="3Ae-2s-YcN" secondAttribute="centerY" id="Lh7-fu-7u7"/>
+                            <constraint firstItem="3Ae-2s-YcN" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ZL3-vx-J6o" secondAttribute="trailing" constant="8" id="a0v-JF-qNl"/>
+                            <constraint firstItem="ZL3-vx-J6o" firstAttribute="top" secondItem="yMj-bG-my3" secondAttribute="top" constant="9" id="cJ2-Xr-QyT"/>
+                            <constraint firstItem="ZL3-vx-J6o" firstAttribute="leading" secondItem="jzV-2F-XKM" secondAttribute="trailing" constant="5" id="gbm-si-zfP"/>
+                            <constraint firstAttribute="bottom" secondItem="ZL3-vx-J6o" secondAttribute="bottom" constant="9" id="h5n-ZP-r3N"/>
+                            <constraint firstItem="3Ae-2s-YcN" firstAttribute="centerY" secondItem="yMj-bG-my3" secondAttribute="centerY" id="hzr-P9-ACH"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="yMj-bG-my3" secondAttribute="trailing" id="0cl-ww-dpJ"/>
+                    <constraint firstItem="yMj-bG-my3" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="1Wf-6k-Apr"/>
+                    <constraint firstItem="yMj-bG-my3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="rGX-6j-POI"/>
+                    <constraint firstAttribute="bottom" secondItem="yMj-bG-my3" secondAttribute="bottom" id="wcV-yV-lep"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="contentLabel" destination="ZL3-vx-J6o" id="heE-yM-I0h"/>
+                <outlet property="dailButton" destination="3Ae-2s-YcN" id="Alg-Xj-byy"/>
+                <outlet property="titleLabel" destination="jzV-2F-XKM" id="OKH-QT-w6f"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="order_telephone" width="22" height="22"/>
+    </resources>
+</document>

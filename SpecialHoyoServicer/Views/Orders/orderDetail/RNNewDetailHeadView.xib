@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="RNNewDetailHeadView" customModule="SpecialHoyoServicer" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="366" height="83"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cgr-5x-7wf">
+                    <rect key="frame" x="0.0" y="0.0" width="366" height="83"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="thi-Aw-R7B" customClass="RNMultiFunctionLabel" customModule="SpecialHoyoServicer" customModuleProvider="target">
+                            <rect key="frame" x="8" y="10" width="0.0" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="l0x-Ul-cKZ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CPg-hQ-8iQ" customClass="RNMultiFunctionLabel" customModule="SpecialHoyoServicer" customModuleProvider="target">
+                            <rect key="frame" x="8" y="31" width="0.0" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="Rgy-kN-13c"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xt4-7r-CXZ">
+                            <rect key="frame" x="302" y="26.5" width="56" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="56" id="GXT-Hi-hnN"/>
+                                <constraint firstAttribute="height" constant="30" id="qL2-fc-gaI"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <state key="normal" title="复制">
+                                <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="copyAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="fgq-Eb-aUU"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wTY-mv-Pu4" customClass="RNMultiFunctionLabel" customModule="SpecialHoyoServicer" customModuleProvider="target">
+                            <rect key="frame" x="8" y="52" width="0.0" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="ZxG-FI-Vf5"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="wTY-mv-Pu4" secondAttribute="bottom" constant="10" id="47m-eg-YNE"/>
+                        <constraint firstItem="thi-Aw-R7B" firstAttribute="top" secondItem="Cgr-5x-7wf" secondAttribute="top" constant="10" id="5GF-Pa-bN6"/>
+                        <constraint firstItem="CPg-hQ-8iQ" firstAttribute="top" secondItem="thi-Aw-R7B" secondAttribute="bottom" id="ACG-OT-ygt"/>
+                        <constraint firstItem="wTY-mv-Pu4" firstAttribute="top" secondItem="CPg-hQ-8iQ" secondAttribute="bottom" id="Dak-kJ-CIh"/>
+                        <constraint firstItem="thi-Aw-R7B" firstAttribute="leading" secondItem="Cgr-5x-7wf" secondAttribute="leading" constant="8" id="GFh-LA-kaK"/>
+                        <constraint firstItem="wTY-mv-Pu4" firstAttribute="leading" secondItem="Cgr-5x-7wf" secondAttribute="leading" constant="8" id="Orr-eJ-nXm"/>
+                        <constraint firstItem="xt4-7r-CXZ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="CPg-hQ-8iQ" secondAttribute="trailing" constant="20" id="RNv-Zo-UFP"/>
+                        <constraint firstAttribute="trailing" secondItem="xt4-7r-CXZ" secondAttribute="trailing" constant="8" id="T7n-5S-fd3"/>
+                        <constraint firstItem="CPg-hQ-8iQ" firstAttribute="leading" secondItem="Cgr-5x-7wf" secondAttribute="leading" constant="8" id="WJc-28-Umo"/>
+                        <constraint firstItem="xt4-7r-CXZ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="thi-Aw-R7B" secondAttribute="trailing" constant="20" id="YgG-jW-JOq"/>
+                        <constraint firstItem="xt4-7r-CXZ" firstAttribute="centerY" secondItem="Cgr-5x-7wf" secondAttribute="centerY" id="a60-Du-q3w"/>
+                        <constraint firstItem="xt4-7r-CXZ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="wTY-mv-Pu4" secondAttribute="trailing" constant="20" id="bjj-Fz-MaH"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Cgr-5x-7wf" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="5LU-qr-vgS"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Cgr-5x-7wf" secondAttribute="trailing" id="9Ue-0J-2m2"/>
+                <constraint firstItem="Cgr-5x-7wf" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="EGM-sQ-4mc"/>
+                <constraint firstAttribute="bottom" secondItem="Cgr-5x-7wf" secondAttribute="bottom" id="Wuv-y7-W0M"/>
+                <constraint firstItem="Cgr-5x-7wf" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="cyV-99-SpD"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="copyButton" destination="xt4-7r-CXZ" id="2iX-0B-NT4"/>
+                <outlet property="documentNumberLabel" destination="wTY-mv-Pu4" id="KaQ-Yp-eIS"/>
+                <outlet property="hoyoCodeLabel" destination="CPg-hQ-8iQ" id="u8U-04-3El"/>
+                <outlet property="oznerCodeLabel" destination="thi-Aw-R7B" id="bro-ZF-EFy"/>
+            </connections>
+            <point key="canvasLocation" x="27" y="-239"/>
+        </view>
+    </objects>
+</document>

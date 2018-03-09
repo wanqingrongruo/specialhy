@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="RNDetailAppointmentCell" customModule="SpecialHoyoServicer" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iAG-ch-7db" userLabel="twoView">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="预约时间: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qli-3f-att">
+                                <rect key="frame" x="8" y="12" width="80" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="e0g-TX-xYm"/>
+                                    <constraint firstAttribute="width" constant="80" id="fDy-TH-KTp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xHX-fX-Aer">
+                                <rect key="frame" x="268.5" y="0.0" width="43.5" height="43.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="xHX-fX-Aer" secondAttribute="height" multiplier="1:1" id="T02-VK-fp6"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="clickAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="b3C-Me-l0c"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2017/04/02" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hl4-lF-rMq" customClass="RNMultiFunctionLabel" customModule="SpecialHoyoServicer" customModuleProvider="target">
+                                <rect key="frame" x="93" y="9.5" width="75" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="26" id="U12-mk-qqq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Qli-3f-att" firstAttribute="leading" secondItem="iAG-ch-7db" secondAttribute="leading" constant="8" id="9S2-Fg-2xD"/>
+                            <constraint firstAttribute="bottom" secondItem="xHX-fX-Aer" secondAttribute="bottom" id="OC3-iy-Iy4"/>
+                            <constraint firstAttribute="bottom" secondItem="Hl4-lF-rMq" secondAttribute="bottom" constant="8" id="SAv-u7-ffF"/>
+                            <constraint firstItem="Hl4-lF-rMq" firstAttribute="centerY" secondItem="Qli-3f-att" secondAttribute="centerY" id="WTW-Fr-aIz"/>
+                            <constraint firstItem="Hl4-lF-rMq" firstAttribute="top" secondItem="iAG-ch-7db" secondAttribute="top" constant="9.5" id="fJr-pu-VfB"/>
+                            <constraint firstItem="xHX-fX-Aer" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Hl4-lF-rMq" secondAttribute="trailing" constant="8" id="iiT-YM-qVf"/>
+                            <constraint firstItem="Hl4-lF-rMq" firstAttribute="leading" secondItem="Qli-3f-att" secondAttribute="trailing" constant="5" id="jDo-aN-0uG"/>
+                            <constraint firstItem="Hl4-lF-rMq" firstAttribute="centerY" secondItem="iAG-ch-7db" secondAttribute="centerY" id="tGq-4t-8OY"/>
+                            <constraint firstItem="xHX-fX-Aer" firstAttribute="top" secondItem="iAG-ch-7db" secondAttribute="top" id="wAh-0G-ynk"/>
+                            <constraint firstAttribute="trailing" secondItem="xHX-fX-Aer" secondAttribute="trailing" constant="8" id="zW4-A2-KCN"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="iAG-ch-7db" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="bSR-96-n0R"/>
+                    <constraint firstAttribute="bottom" secondItem="iAG-ch-7db" secondAttribute="bottom" id="fdW-CY-SCv"/>
+                    <constraint firstItem="iAG-ch-7db" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="ijX-Lu-C1a"/>
+                    <constraint firstAttribute="trailing" secondItem="iAG-ch-7db" secondAttribute="trailing" id="qAu-wi-niI"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="appointmentButton" destination="xHX-fX-Aer" id="i9b-fr-DHD"/>
+                <outlet property="contentLabel" destination="Hl4-lF-rMq" id="Kpe-qV-uM6"/>
+                <outlet property="titleLabel" destination="Qli-3f-att" id="9Fd-Fh-0Yy"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="54"/>
+        </tableViewCell>
+    </objects>
+</document>

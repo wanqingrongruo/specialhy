@@ -1,0 +1,6 @@
+framework module Pods_SpecialHoyoServicerTests {
+  umbrella header "Pods-SpecialHoyoServicerTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

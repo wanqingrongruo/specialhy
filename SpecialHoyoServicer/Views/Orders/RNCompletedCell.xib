@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="134" id="KGk-i7-Jjw" customClass="RNCompletedCell" customModule="SpecialHoyoServicer" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="327" height="134"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="327" height="133.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dsQ-9T-5e7" userLabel="oneView">
+                        <rect key="frame" x="0.0" y="0.0" width="327" height="28"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="order_fix" translatesAutoresizingMaskIntoConstraints="NO" id="Dct-1o-nfF">
+                                <rect key="frame" x="0.0" y="0.0" width="82" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="82" id="7GY-Ew-a90"/>
+                                    <constraint firstAttribute="width" secondItem="Dct-1o-nfF" secondAttribute="height" multiplier="149:50" id="o3m-In-gBM"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GD171203-0145" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iPM-rB-4K6" customClass="RNMultiFunctionLabel" customModule="SpecialHoyoServicer" customModuleProvider="target">
+                                <rect key="frame" x="227" y="0.0" width="92" height="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="iPM-rB-4K6" secondAttribute="bottom" id="4tF-uG-e0s"/>
+                            <constraint firstItem="iPM-rB-4K6" firstAttribute="top" secondItem="dsQ-9T-5e7" secondAttribute="top" id="8tZ-7N-9F3"/>
+                            <constraint firstItem="Dct-1o-nfF" firstAttribute="leading" secondItem="dsQ-9T-5e7" secondAttribute="leading" id="NiQ-Gh-QFT"/>
+                            <constraint firstItem="iPM-rB-4K6" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Dct-1o-nfF" secondAttribute="trailing" constant="8" id="RFm-im-Cxg"/>
+                            <constraint firstAttribute="height" constant="28" id="lbG-3e-pP6"/>
+                            <constraint firstItem="Dct-1o-nfF" firstAttribute="centerY" secondItem="dsQ-9T-5e7" secondAttribute="centerY" id="y6A-Lt-jef"/>
+                            <constraint firstAttribute="trailing" secondItem="iPM-rB-4K6" secondAttribute="trailing" constant="8" id="zwa-e9-9M8"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="55" translatesAutoresizingMaskIntoConstraints="NO" id="SAF-fv-HS9" userLabel="twoView">
+                        <rect key="frame" x="0.0" y="28" width="327" height="64"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C31-rp-FPf" customClass="RNMultiFunctionLabel" customModule="SpecialHoyoServicer" customModuleProvider="target">
+                                <rect key="frame" x="8" y="8" width="311" height="48"/>
+                                <string key="text">JZY-A1XB-A/立式商用一代标准计时型活水
+站网络专用机+4年VIP服务费用</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="C31-rp-FPf" firstAttribute="top" secondItem="SAF-fv-HS9" secondAttribute="top" constant="8" id="94T-8L-BUu"/>
+                            <constraint firstAttribute="trailing" secondItem="C31-rp-FPf" secondAttribute="trailing" constant="8" id="ZIu-m2-2Tv"/>
+                            <constraint firstAttribute="bottom" secondItem="C31-rp-FPf" secondAttribute="bottom" constant="8" id="c38-Ns-nSQ"/>
+                            <constraint firstItem="C31-rp-FPf" firstAttribute="leading" secondItem="SAF-fv-HS9" secondAttribute="leading" constant="8" id="gbe-jp-Qjp"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fuk-Gk-5GV" userLabel="threeView">
+                        <rect key="frame" x="0.0" y="93" width="327" height="40"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="上海市浦东新区桂桥路60号3号楼203" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pP6-VG-zLJ" customClass="RNMultiFunctionLabel" customModule="SpecialHoyoServicer" customModuleProvider="target">
+                                <rect key="frame" x="29" y="9.5" width="237.5" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="kgA-37-iSy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="order_location" translatesAutoresizingMaskIntoConstraints="NO" id="Cpf-H9-g2d">
+                                <rect key="frame" x="8" y="11" width="13" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Cpf-H9-g2d" secondAttribute="height" multiplier="13:18" id="KtQ-Dp-d7V"/>
+                                    <constraint firstAttribute="height" constant="18" id="put-ht-8rk"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person_skip" translatesAutoresizingMaskIntoConstraints="NO" id="iUq-nZ-D4n">
+                                <rect key="frame" x="295" y="8" width="24" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="24" id="DOf-R1-0x5"/>
+                                    <constraint firstAttribute="width" secondItem="iUq-nZ-D4n" secondAttribute="height" multiplier="1:1" id="DbE-xY-tXD"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="iUq-nZ-D4n" firstAttribute="centerY" secondItem="fuk-Gk-5GV" secondAttribute="centerY" id="ATL-kf-RWc"/>
+                            <constraint firstAttribute="trailing" secondItem="iUq-nZ-D4n" secondAttribute="trailing" constant="8" id="Bo5-bb-wpy"/>
+                            <constraint firstItem="pP6-VG-zLJ" firstAttribute="centerY" secondItem="fuk-Gk-5GV" secondAttribute="centerY" id="Js7-2h-e2V"/>
+                            <constraint firstAttribute="height" constant="40" id="O4t-Jc-wf6"/>
+                            <constraint firstItem="Cpf-H9-g2d" firstAttribute="centerY" secondItem="fuk-Gk-5GV" secondAttribute="centerY" id="Ovw-ao-3cK"/>
+                            <constraint firstItem="iUq-nZ-D4n" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="pP6-VG-zLJ" secondAttribute="trailing" constant="8" id="dEJ-1c-yQf"/>
+                            <constraint firstItem="Cpf-H9-g2d" firstAttribute="leading" secondItem="fuk-Gk-5GV" secondAttribute="leading" constant="8" id="xYA-k6-T2A"/>
+                            <constraint firstItem="pP6-VG-zLJ" firstAttribute="leading" secondItem="Cpf-H9-g2d" secondAttribute="trailing" constant="8" id="xke-la-lpT"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="fuk-Gk-5GV" secondAttribute="bottom" id="0LV-KW-xeF"/>
+                    <constraint firstItem="SAF-fv-HS9" firstAttribute="top" secondItem="dsQ-9T-5e7" secondAttribute="bottom" id="8Ut-sF-Ngw"/>
+                    <constraint firstItem="dsQ-9T-5e7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="EoM-um-H28"/>
+                    <constraint firstItem="SAF-fv-HS9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="N8W-Hl-rix"/>
+                    <constraint firstAttribute="trailing" secondItem="SAF-fv-HS9" secondAttribute="trailing" id="Q72-cW-HsB"/>
+                    <constraint firstItem="fuk-Gk-5GV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Qkc-TY-P2O"/>
+                    <constraint firstItem="fuk-Gk-5GV" firstAttribute="top" secondItem="SAF-fv-HS9" secondAttribute="bottom" constant="1" id="g8r-hu-qPF"/>
+                    <constraint firstAttribute="trailing" secondItem="dsQ-9T-5e7" secondAttribute="trailing" id="m9p-C6-lbs"/>
+                    <constraint firstAttribute="trailing" secondItem="fuk-Gk-5GV" secondAttribute="trailing" id="yW8-E6-cmP"/>
+                    <constraint firstItem="dsQ-9T-5e7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="ysj-2i-70n"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="addressLabel" destination="pP6-VG-zLJ" id="WEp-3m-IdD"/>
+                <outlet property="addressView" destination="fuk-Gk-5GV" id="QHt-Sk-iiD"/>
+                <outlet property="contentLabel" destination="C31-rp-FPf" id="1k6-mF-vAg"/>
+                <outlet property="orderId" destination="iPM-rB-4K6" id="Rcy-HL-AC2"/>
+                <outlet property="typeImageView" destination="Dct-1o-nfF" id="HaC-xI-mdZ"/>
+            </connections>
+            <point key="canvasLocation" x="37.5" y="99"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="order_fix" width="74" height="25"/>
+        <image name="order_location" width="13" height="18"/>
+        <image name="person_skip" width="24" height="24"/>
+    </resources>
+</document>

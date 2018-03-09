@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="RNtTypeSwitchCell" customModule="SpecialHoyoServicer" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="123" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="123" height="50"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xMY-lY-vMY">
+                        <rect key="frame" x="0.0" y="0.0" width="123" height="50"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UfP-7t-nPy">
+                                <rect key="frame" x="10" y="12.5" width="103" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="tZ1-Ue-mQe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="UfP-7t-nPy" secondAttribute="trailing" constant="10" id="O51-E3-5rH"/>
+                            <constraint firstItem="UfP-7t-nPy" firstAttribute="centerY" secondItem="xMY-lY-vMY" secondAttribute="centerY" id="eMs-DD-I9s"/>
+                            <constraint firstItem="UfP-7t-nPy" firstAttribute="leading" secondItem="xMY-lY-vMY" secondAttribute="leading" constant="10" id="o8e-5G-7i4"/>
+                            <constraint firstItem="UfP-7t-nPy" firstAttribute="centerX" secondItem="xMY-lY-vMY" secondAttribute="centerX" id="tIe-Kw-HUk"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="xMY-lY-vMY" secondAttribute="bottom" id="BfJ-GH-P9r"/>
+                <constraint firstItem="xMY-lY-vMY" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="H1F-Q0-Ucd"/>
+                <constraint firstItem="xMY-lY-vMY" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="oer-CS-2yE"/>
+                <constraint firstAttribute="trailing" secondItem="xMY-lY-vMY" secondAttribute="trailing" id="xu1-no-YfM"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="123" height="50"/>
+            <connections>
+                <outlet property="titleLabel" destination="UfP-7t-nPy" id="JT3-ni-bya"/>
+            </connections>
+            <point key="canvasLocation" x="70.5" y="54"/>
+        </collectionViewCell>
+    </objects>
+</document>
